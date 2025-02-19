@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^1.7",
         "drupal/ajaxin": "^2.0",
         "drupal/auto_translation": "^1.2",
         "drupal/coffee": "^2.0",
@@ -52,15 +53,21 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
         },
         "sort-packages": true
     },
     "extra": {
+        "patches": {
+            "drupal/tome": {
+                "Undefined array key path -https://www.drupal.org/project/tome/issues/3485337-": "https://www.drupal.org/files/issues/2024-11-04/undefined_array_key_path-3485337.patch"
+            }
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
