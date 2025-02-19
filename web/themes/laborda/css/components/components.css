@@ -1,0 +1,209 @@
+/* Components */
+.btn {
+  font-size: 1.8rem;
+  line-height: 1.15 !important;
+  width: max-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 0.6rem;
+  background-color: var(--white-sand);
+  border: solid 2px;
+  box-shadow: var(--b-shadow--light);
+  &:before,
+  &:after {
+    content: "";
+    width: 66%;
+    height: 2px;
+    background-color: var(--grey-500);
+    margin-block: 0.1rem;
+    transition: width .2s;
+  }
+  &:hover {
+    &:before,
+    &:after {
+      background-color: black;
+      width: 100%;
+      transition: width .2s;
+    }
+  }
+}
+.btn-xl {
+  font-size: var(--fs-md);
+}
+.path-frontpage .header {
+  position: fixed;
+  inset-inline: 0;
+  max-width: 977px !important;
+  padding-block-end: 1rem;
+  background-color: var(--white-sand);
+}
+.header {
+  z-index: 3;
+}
+
+.footer-firma {
+  position: absolute;
+  bottom: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+  font-family: system-ui;
+  letter-spacing: 1.2px;
+  right: -2.5rem;
+  writing-mode: sideways-lr;
+  mix-blend-mode: multiply;
+}
+
+.page-title__full {
+  width: 100%;
+}
+.page-title__first {
+  position: sticky;
+  top: 20rem;
+  @media (min-width: 720px) {
+    top: 6rem;
+  }
+}
+.page-title__first--videos {
+  width: 70%;
+  text-shadow:
+    white 3px 1px,
+    white 6px 1px;
+}
+.page-title__last {
+  position: fixed;
+  top: 23rem;
+  width: 66dvw;
+  z-index: 0;
+  background-color: var(--white-sand);
+  @media (min-width: 720px) {
+    top: 11rem;
+  }
+}
+.page-title__first--servicios {
+  width: 66dvw;
+  line-height: 0.8;
+  display: none;
+  @media (min-width: 720px) {
+    display: block;
+  }
+}
+
+.simple-blockpage-title-lamirada-videos {
+  position: sticky;
+  top: 20rem;
+  @media (min-width: 720px) {
+    top: 6rem;
+  }
+}
+
+.videos-title-vertical {
+  position: sticky;
+  top: 0;
+  max-width: max-content;
+  padding-block: 0;
+  padding-inline-start: 0;
+  margin-block: 0;
+  font-size: 4rem;
+  background-color: var(--white-sand);
+  color: var(--grey-300);
+  @media (min-width: 720px) {
+    font-size: var(--fs-lg);
+  }
+}
+
+ /* Tables */
+ table {
+   border-collapse: collapse;
+   table-layout: fixed;
+  font-family: system-ui;
+  text-transform: initial;
+ }
+
+ th,
+ caption {
+   text-align: start;
+ }
+
+ caption {
+   margin-block: 0.75rem;
+ }
+
+ thead th:not(:first-child),
+
+ thead {
+   border: 0;
+   border-block-end: 2px solid;
+   background: transparent;
+   padding-block-end: .5rem;
+   text-transform: uppercase;
+   font-size: .8rem;
+  }
+  thead > tr > th { background-color: var(--white-sand);}
+ tfoot {
+   border-block: 2px solid;
+   background: whitesmoke;
+ }
+
+ th,
+ td {
+  border-block: #b6b6b6 1px dashed;
+  border-inline: 0;
+  padding: .1rem 1rem;
+
+   h3 {
+    font-size: 1rem;
+    font-weight: normal;
+   }
+ }
+tr + td { background-color: aquamarine;}
+ th:first-child {
+   position: sticky;
+   inset-inline-start: 0;
+   border-inline-end: none;
+ }
+
+ tbody th {
+   background: white;
+ }
+
+ thead th,
+ tfoot th {
+   background: transparent;
+ }
+
+ thead th {
+   vertical-align: bottom;
+ }
+
+ td:first-of-type,
+ :where(thead, tfoot) th:nth-child(2) {
+   border-inline-start: 0;
+ }
+td:first-of-type {
+    width: 75px;
+    border: 0;
+    background: transparent;
+    padding-inline: 0;
+    padding-block-start: 0;
+}
+ th:first-of-type {
+    width: 1rem;
+    border: 0;
+    background-color: transparent;
+ }
+
+/* Shadows */
+.side-shadow {
+   background:
+     linear-gradient(to right, transparent 30%, rgba(255, 255, 255, 0)),
+     linear-gradient(to right, rgba(255, 255, 255, 0), white 70%) 0 100%,
+     radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)),
+     radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)) 0 100%;
+   background-repeat: no-repeat;
+   background-color: #fff;
+   background-size: 4em 100%, 4em 100%, 1.4em 100%, 1.4em 100%;
+   background-position: 0 0, 100%, 0 0, 100%;
+   background-attachment: local, local, scroll, scroll;
+ }

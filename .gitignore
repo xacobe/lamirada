@@ -1,0 +1,23 @@
+# Archivos de entorno
+/.env
+/sites/*/*settings*.php
+/sites/*/*services*.yml
+
+# Dependencias de Composer
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# Archivos temporales
+*.log
+*.sql
+*.tar.gz
+*.zip
+
+# Carpetas generadas por el sistema
+/node_modules/
+/web/sites/default/files/
+/web/sites/default/settings.local.php

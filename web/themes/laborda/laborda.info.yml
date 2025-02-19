@@ -1,0 +1,27 @@
+name: Laborda
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - laborda/base
+  - laborda/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - laborda/user
+  core/drupal.dropbutton:
+    - laborda/dropbutton
+  core/drupal.dialog:
+    - laborda/dialog
+  file/drupal.file:
+    - laborda/file
+  core/drupal.progress:
+    - laborda/progress
+description: 'A theme for LamiradaLaborda.com'
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.1.2'
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+

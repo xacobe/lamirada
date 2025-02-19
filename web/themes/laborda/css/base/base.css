@@ -1,0 +1,58 @@
+
+:root {
+  /* Font size */
+  --fs-xl: 12rem;
+  --fs-lg: 6rem;
+  --fs-md: clamp(1rem, 5.6vw, 2.2rem);
+  --fs-sm: 1.2rem;
+  --fs-xs: 0.8rem;
+
+  /* Font family */
+  --ff-primary: "Alatsi", serif;
+}
+::selection {
+  outline: black 1px;
+  border: solid black 1px;
+  text-shadow: magenta 5px 5px, cyan -5px -5px, yellow 5px -5px;
+}
+/* Base */
+body {
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  /* background-image: url("../images/bg-wall-03.jpg");
+  background-image: url("../images/bg-wall-04.jpg");
+  background-image: url("../images/bg-wall-02.jpg");
+  background-image: url("../images/bg-wall-01.jpg"); */
+  background-size: contain;
+  background-color: var(--white-sand);
+}
+
+/* a:hover {
+  text-shadow:
+    #ff00ff3b 5px 5px,
+    #00ffff91 -5px -5px,
+    #ffff00a3 5px -5px;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: lighter;
+  color: var(--grey-300);
+  line-height: .8;
+  @media (min-width: 720px) {
+    font-size: var(--fs-lg);
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

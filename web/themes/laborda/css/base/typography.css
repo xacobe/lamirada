@@ -1,0 +1,24 @@
+.ff-alatsi-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+
+.fs-md {
+  font-size: var(--fs-md);
+}
+
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+
+.fs-xs {
+  font-size: var(--fs-xs);
+}
