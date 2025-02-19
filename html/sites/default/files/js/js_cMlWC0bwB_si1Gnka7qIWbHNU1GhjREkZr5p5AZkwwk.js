@@ -1,0 +1,2 @@
+/* @license GPL-2.0-or-later https://www.drupal.org/licensing/faq */
+(function(Drupal,PhotoSwipeLightbox){Drupal.behaviors.photoswipe={attach(context,settings){once('photoswipe','.photoswipe-gallery',context).forEach((gallery)=>{const lightbox=new PhotoSwipeLightbox({gallerySelector:'.photoswipe-gallery',childSelector:'a.photoswipe',pswpModule:PhotoSwipe,...(settings?.photoswipe?.options||{})});const event=new CustomEvent('photoswipeLightboxBuild',{detail:{lightbox}});gallery.dispatchEvent(event);lightbox.init();});}};})(Drupal,PhotoSwipeLightbox);;
