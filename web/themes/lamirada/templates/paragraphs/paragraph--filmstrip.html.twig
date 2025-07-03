@@ -44,9 +44,11 @@
   ]
 %}
 {% block paragraph %}
+<div class="filmstrip">
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       {{ content }}
     {% endblock %}
   </div>
+</div>
 {% endblock paragraph %}
