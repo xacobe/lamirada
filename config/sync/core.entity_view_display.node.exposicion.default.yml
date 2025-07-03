@@ -1,0 +1,22 @@
+uuid: 7132afe1-e169-49a2-afd5-7094a38cf117
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.exposicion.field_exposicion_photo
+    - node.type.exposicion
+  module:
+    - user
+id: node.exposicion.default
+targetEntityType: node
+bundle: exposicion
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_exposicion_photo: true
+  langcode: true

@@ -1,0 +1,10 @@
+uuid: 90266317-2976-4f98-9ace-5d55df0ca8c2
+langcode: en
+status: true
+dependencies: {  }
+id: filmframe
+label: Fotograma
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

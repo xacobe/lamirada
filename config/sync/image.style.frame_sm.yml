@@ -1,0 +1,15 @@
+uuid: bce5ba3c-5fba-4b7c-a844-b2c436e91391
+langcode: en
+status: true
+dependencies: {  }
+name: frame_sm
+label: 'Frame sm 240x135'
+effects:
+  84ef84d2-99e1-4082-b971-5283cceda3c3:
+    uuid: 84ef84d2-99e1-4082-b971-5283cceda3c3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 240
+      height: 135
+      anchor: center-center

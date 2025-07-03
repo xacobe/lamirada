@@ -1,0 +1,11 @@
+uuid: a9e89b58-d712-4e0b-9723-1152f49e2a23
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.frame
+label: Fotograma
+description: ''
+targetEntityType: media
+cache: true

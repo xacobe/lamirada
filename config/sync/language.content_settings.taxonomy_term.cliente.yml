@@ -1,0 +1,16 @@
+uuid: 16e9c8f1-4174-41c3-b501-8c6801cbc97e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cliente
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.cliente
+target_entity_type_id: taxonomy_term
+target_bundle: cliente
+default_langcode: site_default
+language_alterable: true

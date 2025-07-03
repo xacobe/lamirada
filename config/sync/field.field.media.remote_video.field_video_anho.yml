@@ -1,0 +1,23 @@
+uuid: cea3ceb1-68fe-4a55-a0fc-076b752fe49b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_video_anho
+    - media.type.remote_video
+id: media.remote_video.field_video_anho
+field_name: field_video_anho
+entity_type: media
+bundle: remote_video
+label: Año
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

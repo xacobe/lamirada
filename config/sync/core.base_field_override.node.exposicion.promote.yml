@@ -1,0 +1,22 @@
+uuid: b97d4d3f-1838-4358-83df-0cce84b60b84
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.exposicion
+id: node.exposicion.promote
+field_name: promote
+entity_type: node
+bundle: exposicion
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

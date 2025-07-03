@@ -1,0 +1,15 @@
+uuid: 3d7f7a73-ebb2-4238-b710-a4be32a471b9
+langcode: en
+status: true
+dependencies: {  }
+name: half_wide
+label: 'Half wide'
+effects:
+  e44e268b-2c2e-4e2e-9824-993f81768674:
+    uuid: e44e268b-2c2e-4e2e-9824-993f81768674
+    id: image_scale
+    weight: 1
+    data:
+      width: 545
+      height: null
+      upscale: false

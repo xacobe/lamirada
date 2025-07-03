@@ -82,9 +82,10 @@
   }
 }
 .page-title__first--servicios {
-  width: 66dvw;
+  width: 130%;
   line-height: 0.8;
   display: none;
+  background-color: var(--white-sand);
   @media (min-width: 720px) {
     display: block;
   }

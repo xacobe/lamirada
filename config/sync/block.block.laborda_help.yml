@@ -1,0 +1,22 @@
+uuid: b556b52a-a1da-4d65-92d7-e1ba7f62bbfc
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - laborda
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: laborda_help
+theme: laborda
+region: header
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

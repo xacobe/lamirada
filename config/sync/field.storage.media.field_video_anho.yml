@@ -1,0 +1,20 @@
+uuid: 00f8494f-7f52-4e54-94bd-7ab37561ade1
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+id: media.field_video_anho
+field_name: field_video_anho
+entity_type: media
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

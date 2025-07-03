@@ -1,0 +1,15 @@
+uuid: 1ba4b526-2665-447c-a6e1-4274d88eb68a
+langcode: es
+status: true
+dependencies: {  }
+name: frame_xs
+label: 'Frame xs 160x90'
+effects:
+  127f5184-2159-4642-91af-ca4c464ad717:
+    uuid: 127f5184-2159-4642-91af-ca4c464ad717
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 160
+      height: 90
+      anchor: center-center

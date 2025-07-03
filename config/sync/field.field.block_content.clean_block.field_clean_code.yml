@@ -1,0 +1,24 @@
+uuid: 3b0a8a42-f1ff-474c-9062-109e8104e34e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.clean_block
+    - field.storage.block_content.field_clean_code
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.clean_block.field_clean_code
+field_name: field_clean_code
+entity_type: block_content
+bundle: clean_block
+label: clean_code
+description: 'Un campo para pegar markup directamente. Este campo está libre de markup accdicional'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

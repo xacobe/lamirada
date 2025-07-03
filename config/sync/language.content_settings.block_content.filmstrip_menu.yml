@@ -1,0 +1,11 @@
+uuid: 83a97b25-a284-4608-9b1a-809f2e704352
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.filmstrip_menu
+id: block_content.filmstrip_menu
+target_entity_type_id: block_content
+target_bundle: filmstrip_menu
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,29 @@
+uuid: 7eaf8cc3-a937-40e2-8a18-b0543b951dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_image_video_alt
+    - media.type.image
+    - media.type.remote_video
+id: media.remote_video.field_image_video_alt
+field_name: field_image_video_alt
+entity_type: media
+bundle: remote_video
+label: 'Video thumb image alt'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

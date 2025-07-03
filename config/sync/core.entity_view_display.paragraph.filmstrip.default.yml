@@ -1,0 +1,29 @@
+uuid: 4eae834b-f1aa-4886-994f-763a2893b0d6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.filmstrip.field_filmstrip
+    - paragraphs.paragraphs_type.filmstrip
+  module:
+    - entity_reference_revisions
+    - nomarkup
+id: paragraph.filmstrip.default
+targetEntityType: paragraph
+bundle: filmstrip
+mode: default
+content:
+  field_filmstrip:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: ''
+        referenced_entity: ''
+    weight: 0
+    region: content
+hidden: {  }

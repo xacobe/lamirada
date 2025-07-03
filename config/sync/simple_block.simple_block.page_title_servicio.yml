@@ -1,0 +1,11 @@
+uuid: b9222f6e-81d2-40bd-ac02-e4353f5094bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: page_title_servicio
+title: 'Page title Servicio'
+content:
+  value: '<div class="page-title page-title__first page-title__first--servicios">Eduardo</div>'
+  format: full_html

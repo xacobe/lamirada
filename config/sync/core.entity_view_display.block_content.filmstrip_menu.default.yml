@@ -1,0 +1,30 @@
+uuid: ad7fa9a4-955f-412e-82b6-88a1359f811a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.filmstrip_menu
+    - field.field.block_content.filmstrip_menu.field_filmstrip_item
+  module:
+    - entity_reference_revisions
+    - nomarkup
+id: block_content.filmstrip_menu.default
+targetEntityType: block_content
+bundle: filmstrip_menu
+mode: default
+content:
+  field_filmstrip_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: ''
+        referenced_entity: ''
+    weight: 0
+    region: content
+hidden:
+  langcode: true

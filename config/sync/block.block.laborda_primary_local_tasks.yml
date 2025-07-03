@@ -1,0 +1,22 @@
+uuid: de0d5593-95ef-4b2a-b7e9-b5b94938b541
+langcode: en
+status: false
+dependencies:
+  theme:
+    - laborda
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: laborda_primary_local_tasks
+theme: laborda
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

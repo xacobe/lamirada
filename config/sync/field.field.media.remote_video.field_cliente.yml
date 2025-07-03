@@ -1,0 +1,29 @@
+uuid: 7dfd6794-4b21-47f8-9f29-06e272a342cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_cliente
+    - media.type.remote_video
+    - taxonomy.vocabulary.cliente
+id: media.remote_video.field_cliente
+field_name: field_cliente
+entity_type: media
+bundle: remote_video
+label: Cliente
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cliente: cliente
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,26 @@
+uuid: 847a95ea-241a-462a-b654-9cf8cc888c19
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - laborda
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: laborda_page_title
+theme: laborda
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

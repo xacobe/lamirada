@@ -1,0 +1,19 @@
+uuid: f6aead63-ab88-4505-bf2b-5b5db43e88d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_video_title
+    - media.type.remote_video
+id: media.remote_video.field_video_title
+field_name: field_video_title
+entity_type: media
+bundle: remote_video
+label: 'Nombre del vídeo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

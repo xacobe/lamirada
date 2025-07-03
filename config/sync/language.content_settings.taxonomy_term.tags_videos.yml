@@ -1,0 +1,16 @@
+uuid: c0fd17db-852c-4425-8ace-e19481b26d2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags_videos
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.tags_videos
+target_entity_type_id: taxonomy_term
+target_bundle: tags_videos
+default_langcode: site_default
+language_alterable: true

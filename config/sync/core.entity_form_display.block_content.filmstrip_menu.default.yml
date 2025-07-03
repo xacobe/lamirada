@@ -1,0 +1,48 @@
+uuid: 50edf5bc-9db7-4251-83db-0a8e6138cb71
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.filmstrip_menu
+    - field.field.block_content.filmstrip_menu.field_filmstrip_item
+  module:
+    - paragraphs
+id: block_content.filmstrip_menu.default
+targetEntityType: block_content
+bundle: filmstrip_menu
+mode: default
+content:
+  field_filmstrip_item:
+    type: paragraphs
+    weight: 26
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }
