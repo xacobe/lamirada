@@ -7,6 +7,14 @@
   font-weight: 400;
   font-style: normal;
 }
+.fs-xxl {
+  font-size: 5rem;
+  font-weight: lighter;
+  margin: 0;
+  @media all and (min-width: 768px) {
+    font-size: 10rem;
+  }
+}
 .fs-xl {
   font-size: var(--fs-xl);
 }

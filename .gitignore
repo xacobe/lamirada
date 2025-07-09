@@ -22,3 +22,5 @@
 /web/sites/default/files/
 /web/sites/default/settings.local.php
 /.gitattributes
+
+/content

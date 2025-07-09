@@ -6,6 +6,7 @@
             const showPhotosBtn = document.getElementById('showPhotos');
             const showVideosBtn = document.getElementById('showVideos');
             const filmStrip = document.querySelector('.filmstrip');
+            const siteName = document.querySelector('.site-name');
 
             if (
                 showPhotosBtn &&
@@ -21,22 +22,38 @@
                     const items = document.querySelectorAll('.filmstrip__item');
 
                     items.forEach((item, index) => {
-                        // Limpiamos las clases previas
-                        item.classList.remove('show-photo', 'show-video');
+                        const hadPhoto = item.classList.contains('show-photo');
+                        const hadVideo = item.classList.contains('show-video');
+                        const wasActive = hadPhoto || hadVideo;
 
-                        // Aplicamos el cambio con retardo en cascada
+                        // Animación de cierre si estaba activo y estamos cambiando de modo
+                        if (wasActive && (mode === null || (mode !== 'photo' && mode !== 'video'))) {
+                            item.classList.add('flash--close');
+                        }
+
+                        // Limpiar clases previas
+                        item.classList.remove('show-photo', 'show-video', 'flash');
+
                         setTimeout(() => {
-                            // Cambiamos la clase según el modo
-                            item.classList.add(mode === 'photo' ? 'show-photo' : 'show-video');
+                            // Eliminar animación de cierre si existía
+                            item.classList.remove('flash--close');
 
-                            // Añadimos el efecto flash
-                            item.classList.add('flash');
-                            // Lo quitamos tras terminar la animación para permitir reutilizarlo
-                            setTimeout(() => item.classList.remove('flash'), 300);
-                        }, index * 150); // 150ms de diferencia entre items
+                            // Aplicar nuevo estado si hay modo
+                            if (mode === 'photo' || mode === 'video') {
+                                item.classList.add(mode === 'photo' ? 'show-photo' : 'show-video');
+                                item.classList.add('flash');
+                            }
+
+                            // Limpiar clases de animación después de que terminen
+                            const cleanFlash = () => {
+                                item.classList.remove('flash', 'flash--close');
+                                item.removeEventListener('animationend', cleanFlash);
+                            };
+                            item.addEventListener('animationend', cleanFlash, { once: true });
+                        }, index * 75);
                     });
 
-                    // Botones animados
+                    // Resto de la lógica de UI
                     if (mode === 'photo') {
                         showPhotosBtn.classList.remove('inactive');
                         showVideosBtn.classList.add('inactive');
@@ -44,17 +61,34 @@
                         showVideosBtn.classList.remove('active');
                         filmStrip.classList.add('photo');
                         filmStrip.classList.remove('video');
-                    } else {
+                        siteName.classList.add('photo');
+                        siteName.classList.remove('video');
+                    } else if (mode === 'video') {
                         showPhotosBtn.classList.add('inactive');
                         showVideosBtn.classList.remove('inactive');
                         showPhotosBtn.classList.remove('active');
                         showVideosBtn.classList.add('active');
                         filmStrip.classList.add('video');
                         filmStrip.classList.remove('photo');
+                        siteName.classList.add('video');
+                        siteName.classList.remove('photo');
+                    } else {
+                        // Modo neutral
+                        showPhotosBtn.classList.remove('inactive', 'active');
+                        showVideosBtn.classList.remove('inactive', 'active');
+                        filmStrip.classList.remove('photo', 'video');
+                        siteName.classList.remove('photo', 'video');
                     }
 
                     currentMode = mode;
                 }
+
+                // Manejador para cerrar al hacer clic fuera
+                document.addEventListener('click', function (e) {
+                    if (!e.target.closest('.filmstrip') && !e.target.closest('#showPhotos, #showVideos') && currentMode) {
+                        toggleFilmstrip(null); // Pasar null para modo neutral
+                    }
+                  });
 
 
                 // Clic en "Fotografías"
@@ -82,6 +116,8 @@
                         showVideosBtn.classList.remove('active');
                         filmStrip.classList.remove('photo');
                         filmStrip.classList.remove('video');
+                        siteName.classList.remove('photo');
+                        siteName.classList.remove('video');
 
                         currentMode = null;
 

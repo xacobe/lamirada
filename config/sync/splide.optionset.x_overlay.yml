@@ -1,0 +1,20 @@
+uuid: 62d6e7ef-5eda-411e-bf81-c80abdff4b49
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - splide_x
+_core:
+  default_config_hash: qUpVZtpf2zDpNNmRMPNcOGzLnO_e5UqP_JWuCoAkoJA
+id: x_overlay
+name: x_overlay
+weight: -3
+label: 'X Overlay'
+group: overlay
+skin: boxed
+breakpoint: 0
+optimized: true
+options:
+  settings:
+    type: loop

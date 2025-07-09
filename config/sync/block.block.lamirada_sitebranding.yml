@@ -9,7 +9,7 @@ dependencies:
 id: lamirada_sitebranding
 theme: lamirada
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: system_branding_block
 settings:
@@ -19,9 +19,9 @@ settings:
   provider: system
   use_site_logo: false
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "<front>\r\n/admin/*"
+    pages: '/admin/*'

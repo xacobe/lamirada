@@ -6,17 +6,30 @@ dependencies:
     - field.field.node.exposicion.field_exposicion_photo
     - node.type.exposicion
   module:
+    - nomarkup
     - user
 id: node.exposicion.default
 targetEntityType: node
 bundle: exposicion
 mode: default
 content:
+  field_exposicion_photo:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: square
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: '0'
+    weight: 1
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
-  field_exposicion_photo: true
   langcode: true

@@ -9,7 +9,7 @@ _core:
 id: lamirada_secondary_local_tasks
 theme: lamirada
 region: header
-weight: 1
+weight: 3
 provider: null
 plugin: local_tasks_block
 settings:

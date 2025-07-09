@@ -22,7 +22,7 @@ content:
       nomarkup:
         enabled: true
         separator: ''
-        referenced_entity: '1'
+        referenced_entity: '0'
     weight: 0
     region: content
 hidden: {  }

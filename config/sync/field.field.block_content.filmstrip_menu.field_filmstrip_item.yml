@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.filmstrip_menu
     - field.storage.block_content.field_filmstrip_item
     - paragraphs.paragraphs_type.filmframe
+    - paragraphs.paragraphs_type.text
   module:
     - entity_reference_revisions
 id: block_content.filmstrip_menu.field_filmstrip_item
@@ -23,9 +24,16 @@ settings:
   handler_settings:
     target_bundles:
       filmframe: filmframe
+      text: text
     negate: 0
     target_bundles_drag_drop:
       filmframe:
         weight: 2
+        enabled: true
+      filmstrip:
+        weight: 5
+        enabled: false
+      text:
+        weight: 6
         enabled: true
 field_type: entity_reference_revisions

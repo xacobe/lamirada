@@ -1,0 +1,8 @@
+uuid: 590ddb8b-b9ce-4a55-acb7-fb160d94cad9
+langcode: es
+status: true
+dependencies: {  }
+id: photo
+label: 'Menú fotografía'
+description: 'Menú sección fotografia'
+locked: false

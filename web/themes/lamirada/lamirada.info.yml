@@ -7,6 +7,7 @@ libraries:
   - lamirada/messages
   - core/normalize
   - lamirada/filmstrip
+  - lamirada/grid-plus
 libraries-extend:
   user/drupal.user:
     - lamirada/user

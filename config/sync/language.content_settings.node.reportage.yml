@@ -1,0 +1,11 @@
+uuid: 2b862d08-5d5c-464a-888a-f4b8a552d903
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.reportage
+id: node.reportage
+target_entity_type_id: node
+target_bundle: reportage
+default_langcode: site_default
+language_alterable: false

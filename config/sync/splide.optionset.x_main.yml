@@ -1,0 +1,41 @@
+uuid: ebb27a88-8490-4464-a7c0-fbd6b155c447
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - splide_x
+_core:
+  default_config_hash: 3qj0yZiW4ukCu80O3uRdVKaFE2hgEbta8fxXFqUt_cQ
+id: x_main
+name: x_main
+weight: -4
+label: 'X Main'
+group: main
+skin: fullwidth
+breakpoint: 3
+optimized: true
+options:
+  settings:
+    type: loop
+    focus: center
+    easing: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)'
+    down: true
+    downTarget: '#main'
+    downOffset: 120
+  breakpoints:
+    -
+      breakpoint: 900
+      unsplide: false
+      settings:
+        focus: center
+    -
+      breakpoint: 480
+      unsplide: false
+      settings:
+        focus: center
+    -
+      breakpoint: 320
+      unsplide: false
+      settings:
+        focus: center

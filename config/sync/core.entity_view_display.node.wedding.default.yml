@@ -1,0 +1,44 @@
+uuid: 03533334-3e83-4e5c-9f64-d8f4af29db18
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.wedding.body
+    - field.field.node.wedding.field_wedding_media
+    - node.type.wedding
+  module:
+    - nomarkup
+    - text
+    - user
+id: node.wedding.default
+targetEntityType: node
+bundle: wedding
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_wedding_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: square
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: '1'
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

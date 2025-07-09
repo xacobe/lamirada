@@ -6,6 +6,8 @@ base:
         weight: -10
       css/base/base.css:
         weight: -10
+      css/base/animations.css:
+        weight: -10
       css/base/colors.css:
         weight: -10
       css/base/utilities.css:
@@ -20,9 +22,9 @@ base:
         weight: -10
       css/components/filmstrip.css:
         weight: -10
-      css/components/menus.css:
+      css/components/grid.css:
         weight: -10
-      css/layout/section.css:
+      css/components/menus.css:
         weight: -10
       css/base/core/action-links.css:
         weight: -5
@@ -100,7 +102,7 @@ messages:
   version: VERSION
   css:
     component:
-      css/components/messages.css:
+      css/base/core/messages.css:
         weight: -10
 node:
   version: VERSION
@@ -112,7 +114,7 @@ progress:
   version: VERSION
   css:
     component:
-      css/components/progress.css:
+      css/base/core/progress.css:
         weight: -10
 search-results:
   version: VERSION
@@ -130,6 +132,13 @@ filmstrip:
   version: 1.0
   js:
     js/filmstrip.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+grid-plus:
+  version: 1.0
+  js:
+    js/grid-plus.js: {}
   dependencies:
     - core/jquery
     - core/drupal

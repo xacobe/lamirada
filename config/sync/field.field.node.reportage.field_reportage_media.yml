@@ -1,0 +1,33 @@
+uuid: 55c20b93-d446-4c90-bb30-6fa0bb0f7d4e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reportage_media
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.reportage
+id: node.reportage.field_reportage_media
+field_name: field_reportage_media
+entity_type: node
+bundle: reportage
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

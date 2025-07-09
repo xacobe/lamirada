@@ -1,0 +1,17 @@
+uuid: c551787f-b537-44a9-910c-42fdcf844c11
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Reportaje
+type: reportage
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,93 @@
+uuid: 0b812574-fc9a-4042-8962-fc77f0910f75
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.square
+    - field.field.media.remote_video.field_cliente
+    - field.field.media.remote_video.field_image_video_alt
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_video_anho
+    - field.field.media.remote_video.field_video_client
+    - field.field.media.remote_video.field_video_tags
+    - field.field.media.remote_video.field_video_title
+    - media.type.remote_video
+  module:
+    - layout_builder
+    - lite_youtube_embed
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: ZdPcl2hPxl5pgv3pI-07R7h51OjeUeKJTy-ab1NfM34
+id: media.remote_video.square
+targetEntityType: media
+bundle: remote_video
+mode: square
+content:
+  field_cliente:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_image_video_alt:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_media_oembed_video:
+    type: lite_youtube_embed
+    label: hidden
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video_anho:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_video_client:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_video_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_video_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

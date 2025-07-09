@@ -1,0 +1,20 @@
+uuid: a255d1b7-de33-41dd-b0ff-92beac529ed6
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - splide_x
+_core:
+  default_config_hash: Dp9ytPlD8Zq9T7lNfjk7MAsDtLZ-BT0MQGsHIvWLzQo
+name: splide_rectangle
+label: 'Splide rectangle (640x480)'
+effects:
+  5062a573-e81a-4412-b106-6d25387cc519:
+    uuid: 5062a573-e81a-4412-b106-6d25387cc519
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 480
+      anchor: center-center

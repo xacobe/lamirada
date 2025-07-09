@@ -11,7 +11,7 @@ _core:
 id: lamirada_messages
 theme: lamirada
 region: header
-weight: -1
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:

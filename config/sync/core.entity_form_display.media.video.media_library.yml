@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
+    - field.field.media.video.field_filmstrip_link
     - field.field.media.video.field_media_video_file
     - media.type.video
+  module:
+    - link
 _core:
   default_config_hash: kGv8YsopqHvzTzb7QTINWcv0fnNa5ZDQyZxpOQR2vro
 id: media.video.media_library
@@ -13,9 +16,17 @@ targetEntityType: media
 bundle: video
 mode: media_library
 content:
+  field_filmstrip_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 0
     region: content
     settings:
       include_locked: true

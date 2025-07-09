@@ -3,15 +3,15 @@ _core:
 langcode: es
 dompurify_hide_warning: false
 custom:
-  style: example2
+  style: plain
   activate: 1
   transition_type: fade
   transition_speed: 350
   opacity: 0.65
-  text_current: '{current} de {total}'
-  text_previous: '« Anterior'
-  text_next: 'Siguiente »'
-  text_close: Cerrar
+  text_current: '{current} of {total}'
+  text_previous: '« Prev'
+  text_next: 'Next »'
+  text_close: Close
   maxwidth: 98%
   maxheight: 98%
   initialwidth: '300'
@@ -24,8 +24,8 @@ custom:
     slideshow: 0
     auto: true
     speed: 2500
-    text_start: start
-    text_stop: stop
+    text_start: 'start slideshow'
+    text_stop: 'stop slideshow'
 advanced:
   unique_token: 1
   mobile_detect: 1

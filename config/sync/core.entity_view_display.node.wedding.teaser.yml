@@ -1,0 +1,33 @@
+uuid: 8b2cea0e-7b09-45b2-bd09-9b370763209f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.wedding.body
+    - field.field.node.wedding.field_wedding_media
+    - node.type.wedding
+  module:
+    - text
+    - user
+id: node.wedding.teaser
+targetEntityType: node
+bundle: wedding
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_wedding_media: true
+  langcode: true
