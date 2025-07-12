@@ -1,0 +1,29 @@
+uuid: 679e9a1f-5ed6-48bb-9a66-12acc571dd23
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.video
+  module:
+    - system
+  theme:
+    - lamirada
+id: lamirada_menuvideo
+theme: lamirada
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:video'
+settings:
+  id: 'system_menu_block:video'
+  label: 'Menú video'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/video\r\n/video/*\r\n"

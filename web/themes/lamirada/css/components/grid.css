@@ -94,9 +94,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: var(--fs-md);
   text-align: center;
-  background-color: black;
+  background-color: var(--black);
   color: white;
   grid-column: span 2;
   flex-direction: column;

@@ -9,7 +9,7 @@ _core:
   default_config_hash: 6AyKDhB8ct8kQL0wr1FCv6K1GOSJSqr8udbVOuVz0uI
 id: x_fullscreen
 name: x_fullscreen
-weight: -6
+weight: -7
 label: 'X Fullscreen'
 group: main
 skin: fullscreen

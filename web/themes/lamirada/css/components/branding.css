@@ -50,11 +50,14 @@
 
 
 /* Photo */
-.path-fotografia {
+.path-fotografia,
+.path-video {
   .site-name {
+    padding-bottom: 0.2rem !important;
+
     @media (min-width: 768px) {
+      padding-bottom: 0.4rem !important;
       font-size: 1.7rem;
-      padding-bottom: 0.2rem !important;
     }
   }
 
@@ -74,10 +77,22 @@
     padding-block-end: 1rem;
     letter-spacing: 9px;
   }
+
   .page-subtitle--reportajes {
     font-size: 1.8rem;
   }
+
   .page-subtitle--bodas {
     letter-spacing: 27px;
+  }
+}
+
+
+.path-video {
+  .site-name {
+    @media (min-width: 768px) {
+      padding-bottom: 0.4rem !important;
+      font-size: 1.65rem;
+    }
   }
 }

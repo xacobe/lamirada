@@ -9,7 +9,7 @@ _core:
   default_config_hash: JzBf0no5Qia9pFCEMsHY0r1DdRqGdjeGlqO-rtoOmAc
 id: x_grid
 name: x_grid
-weight: -5
+weight: -6
 label: 'X Grid'
 group: main
 skin: grid

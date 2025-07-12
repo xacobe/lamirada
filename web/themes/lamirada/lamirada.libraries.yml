@@ -26,6 +26,8 @@ base:
         weight: -10
       css/components/menus.css:
         weight: -10
+      css/layout/sections.css:
+        weight: -10
       css/base/core/action-links.css:
         weight: -5
       css/base/core/breadcrumb.css:

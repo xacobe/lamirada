@@ -9,7 +9,7 @@ _core:
   default_config_hash: g8hoecEkzP_4ctTuqzB2bSqcVuyuBG8cRxzRyuAoeYw
 id: x_vtabs
 name: x_vtabs
-weight: null
+weight: 1
 label: 'X VTabs'
 group: nav
 skin: vtabs

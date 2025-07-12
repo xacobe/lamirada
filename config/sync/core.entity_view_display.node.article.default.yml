@@ -7,10 +7,13 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_images
     - field.field.node.article.field_tags
+    - image.style.300x300_square
     - image.style.wide
     - node.type.article
   module:
     - image
+    - media
+    - nomarkup
     - text
     - user
 _core:
@@ -39,12 +42,18 @@ content:
     weight: -1
     region: content
   field_images:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: above
     settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
+      image_link: ''
+      image_style: 300x300_square
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: ''
     weight: 101
     region: content
   field_tags:

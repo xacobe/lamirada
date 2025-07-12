@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.remote_video.field_cliente
     - field.field.media.remote_video.field_image_video_alt
     - field.field.media.remote_video.field_media_oembed_video
     - field.field.media.remote_video.field_video_anho
@@ -27,16 +26,6 @@ content:
     weight: 10
     region: content
     settings: {  }
-    third_party_settings: {  }
-  field_cliente:
-    type: entity_reference_autocomplete
-    weight: 107
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_image_video_alt:
     type: media_library_widget

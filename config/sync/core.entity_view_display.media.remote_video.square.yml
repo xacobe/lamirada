@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.square
-    - field.field.media.remote_video.field_cliente
     - field.field.media.remote_video.field_image_video_alt
     - field.field.media.remote_video.field_media_oembed_video
     - field.field.media.remote_video.field_video_anho
@@ -26,14 +25,6 @@ targetEntityType: media
 bundle: remote_video
 mode: square
 content:
-  field_cliente:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 7
-    region: content
   field_image_video_alt:
     type: entity_reference_entity_view
     label: above

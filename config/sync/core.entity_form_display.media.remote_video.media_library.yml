@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
-    - field.field.media.remote_video.field_cliente
     - field.field.media.remote_video.field_image_video_alt
     - field.field.media.remote_video.field_media_oembed_video
     - field.field.media.remote_video.field_video_anho
@@ -28,7 +27,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_cliente: true
   field_image_video_alt: true
   field_media_oembed_video: true
   field_video_anho: true

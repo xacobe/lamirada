@@ -1,0 +1,33 @@
+uuid: 5ecc97bc-97f4-4c62-b674-f62cb6e626ce
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - splide_x
+_core:
+  default_config_hash: g8hoecEkzP_4ctTuqzB2bSqcVuyuBG8cRxzRyuAoeYw
+id: videos_nav
+name: videos_nav
+weight: -9
+label: 'Videos Nav'
+group: nav
+skin: vtabs
+breakpoint: 0
+optimized: true
+options:
+  settings:
+    type: loop
+    height: 80dvh
+    perPage: 12
+    clones: 7
+    easing: ease-in
+    arrows: 'false'
+    pagination: 'false'
+    keyboard: 'true'
+    direction: ttb
+    isNavigation: true
+    trimSpace: move
+    easingOverride: ease-in
+    wheel: true
+    wheelSleep: 50

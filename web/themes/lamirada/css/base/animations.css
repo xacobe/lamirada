@@ -44,7 +44,7 @@
 /* https: //codepen.io/ddietle/pen/qqOwJW */
 
 .old-film {
-  box-shadow: inset 0 0 20px black;
+  box-shadow: inset 0 0 20px var(--black);
   animation: jitter 5s linear infinite;
 }
 
@@ -70,8 +70,8 @@
   top: 0;
   height: 100%;
   width: 100%;
-  border-left: solid 1px black;
-  border-right: solid 1px black;
+  border-left: solid 1px var(--black);
+  border-right: solid 1px var(--black);
   animation: artifacts 5s linear infinite;
   filter: blur(3px);
 }

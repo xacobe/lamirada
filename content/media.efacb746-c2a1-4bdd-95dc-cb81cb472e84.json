@@ -18,10 +18,16 @@
     ],
     "revision_created": [
         {
-            "value": "2025-06-30T13:32:49+00:00"
+            "value": "2025-07-04T03:58:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
-    "revision_user": [],
+    "revision_user": [
+        {
+            "target_type": "user",
+            "target_uuid": "fbb7bd43-6d18-4519-b11a-b47733d71451"
+        }
+    ],
     "revision_log_message": [],
     "status": [
         {
@@ -51,12 +57,14 @@
     ],
     "created": [
         {
-            "value": "2025-06-30T13:32:49+00:00"
+            "value": "2025-06-30T13:32:49+00:00",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "changed": [
         {
-            "value": "2025-06-30T13:32:49+00:00"
+            "value": "2025-07-04T03:58:10+00:00",
+            "format": "Y-m-d\\TH:i:sP"
         }
     ],
     "default_langcode": [
@@ -71,15 +79,22 @@
     ],
     "path": [
         {
-            "alias": null,
+            "alias": "",
             "pid": null,
             "langcode": "es"
         }
     ],
+    "field_filmstrip_link": [
+        {
+            "uri": "internal:\/video\/videoclips",
+            "title": "Videoclips",
+            "options": []
+        }
+    ],
     "field_media_video_file": [
         {
-            "display": null,
-            "description": null,
+            "display": true,
+            "description": "",
             "target_type": "file",
             "target_uuid": "4737a297-7031-4e7f-a825-147dc5917dd2"
         }

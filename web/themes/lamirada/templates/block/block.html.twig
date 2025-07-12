@@ -29,7 +29,6 @@
 {%
   set classes = [
     'block',
-    label ? 'block-' ~ label|lower|raw,
     'position-relative',
     configuration.provider|clean_class,
     plugin_id|clean_class,

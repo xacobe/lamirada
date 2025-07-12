@@ -20,12 +20,13 @@
     display: block;
     width: max-content;
     line-height: 1;
+    cursor: pointer;
   }
 }
 
 /* Menu Photo */
 .menu--photo,
-.menu--secondary {
+.menu--video {
 
   .menu {
     display: flex;
@@ -49,7 +50,7 @@
 /*
         &.is-active {
             color: #fa2f2f !important;
-            font-size: 2rem;
+            font-size: var(--fs-md);
           } */
       }
     }
@@ -58,7 +59,7 @@
 
       a {
         color: #fa2f2f !important;
-        /* font-size: 2rem; */
+        /* font-size: var(--fs-md); */
       }
     }
   }

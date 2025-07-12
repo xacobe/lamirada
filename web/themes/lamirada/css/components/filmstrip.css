@@ -77,12 +77,12 @@
     bottom: -70px;
     right: 71px;
     color: white;
-    font-size: 2rem;
+    font-size: var(--fs-md);
     width: min-content;
 
     @media all and (min-width: 768px) {
       bottom: -7rem;
-      background-color: black;
+      background-color: var(--black);
       padding-inline: 0.6rem;
       padding-block: 0.4rem;
       position: absolute;

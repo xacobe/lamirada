@@ -1,0 +1,8 @@
+uuid: 559a5718-bdfd-44a0-a7fd-bf18b8d5bc5a
+langcode: es
+status: true
+dependencies: {  }
+id: video
+label: 'Menú video'
+description: 'Menú sección video'
+locked: false

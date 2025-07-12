@@ -3,10 +3,13 @@ langcode: es
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.square
     - field.field.node.wedding.body
     - field.field.node.wedding.field_wedding_media
     - node.type.wedding
   module:
+    - colorbox
     - nomarkup
     - text
     - user
@@ -23,16 +26,18 @@ content:
     weight: 101
     region: content
   field_wedding_media:
-    type: entity_reference_entity_view
+    type: colorbox_view_modes
     label: hidden
     settings:
-      view_mode: square
-      link: false
+      colorbox_view_mode: square
+      colorbox_modal_view_mode: full
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
     third_party_settings:
       nomarkup:
         enabled: true
         separator: ''
-        referenced_entity: '1'
+        referenced_entity: ''
     weight: 102
     region: content
   links:

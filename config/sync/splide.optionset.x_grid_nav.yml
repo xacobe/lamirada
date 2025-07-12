@@ -1,0 +1,29 @@
+uuid: d7ceeac0-4966-4249-ac3e-987d44962f6b
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - splide_x
+_core:
+  default_config_hash: JzBf0no5Qia9pFCEMsHY0r1DdRqGdjeGlqO-rtoOmAc
+id: x_grid_nav
+name: x_grid_nav
+weight: -5
+label: 'X Grid Nav'
+group: nav
+skin: grid
+breakpoint: 0
+optimized: true
+options:
+  settings:
+    type: loop
+    height: 500px
+    heightRatio: '0.5'
+    perPage: 12
+    arrows: 'false'
+    pagination: 'false'
+    snap: true
+    direction: ttb
+    isNavigation: true
+    wheel: true
