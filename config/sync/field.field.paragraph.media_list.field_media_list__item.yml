@@ -1,0 +1,33 @@
+uuid: ac5591e4-a0ee-4206-ba26-28a2bf9ce621
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_list__item
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.media_list
+id: paragraph.media_list.field_media_list__item
+field_name: field_media_list__item
+entity_type: paragraph
+bundle: media_list
+label: media_list__item
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: remote_video
+field_type: entity_reference

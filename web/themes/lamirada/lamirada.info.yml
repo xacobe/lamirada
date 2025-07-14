@@ -8,6 +8,7 @@ libraries:
   - core/normalize
   - lamirada/filmstrip
   - lamirada/grid-plus
+  - lamirada/menu-mobile
 libraries-extend:
   user/drupal.user:
     - lamirada/user

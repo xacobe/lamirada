@@ -14,6 +14,7 @@ dependencies:
   module:
     - layout_builder
     - lite_youtube_embed
+    - nomarkup
 third_party_settings:
   layout_builder:
     enabled: false
@@ -25,59 +26,26 @@ targetEntityType: media
 bundle: remote_video
 mode: square
 content:
-  field_image_video_alt:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
   field_media_oembed_video:
     type: lite_youtube_embed
     label: hidden
     settings:
-      max_width: 0
+      max_width: 250
       max_height: 0
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
     weight: 0
-    region: content
-  field_video_anho:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  field_video_client:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_video_tags:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_video_title:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 4
     region: content
 hidden:
   created: true
+  field_image_video_alt: true
+  field_video_anho: true
+  field_video_client: true
+  field_video_tags: true
+  field_video_title: true
   langcode: true
   name: true
   thumbnail: true

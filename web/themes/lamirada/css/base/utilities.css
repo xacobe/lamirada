@@ -13,9 +13,8 @@
 .position-relative {
   position: relative;
 }
-.d-flex {
-  display: flex;
-}
+.d-flex { display: flex !important;}
+.flex-row { flex-direction: row !important;}
 .justify-content-center {
   justify-content: center;
 }

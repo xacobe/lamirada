@@ -139,7 +139,9 @@
     ],
     "node.80b2fc00-0390-42eb-be45-4eb051a2cbe6": [
         "user.fbb7bd43-6d18-4519-b11a-b47733d71451",
-        "paragraph.16c23e42-f615-4f8f-a52c-8420fbd593f5"
+        "paragraph.16c23e42-f615-4f8f-a52c-8420fbd593f5",
+        "paragraph.0ed7bea6-51dd-467f-8c1d-18fc95205c6f",
+        "paragraph.b2517601-a49a-4b8e-b483-ae783bb3febe"
     ],
     "menu_link_content.7712717f-d2c2-4245-8d24-4721c89b6f3a": [],
     "file.fac693d0-0350-4fa7-a889-578565299c52": [
@@ -166,7 +168,6 @@
         "file.79fd144e-6c13-4825-80b0-f7ad463e43f7",
         "file.47da4a9c-f454-42b2-a098-489f16410797"
     ],
-    "paragraph.c418f864-2247-49db-a8fa-d60022563e97": [],
     "paragraph.d29046ea-414a-40db-ba3b-4ba67378535b": [
         "paragraph.c25fb6bc-ed5b-4015-9c61-1e3cbdab6161",
         "paragraph.c74aba0e-b174-4904-a3d4-1092442fd3fb",
@@ -186,12 +187,6 @@
         "paragraph.6619f023-ed7b-4535-880e-07bc4849b323",
         "paragraph.dde7b61f-f658-4324-9dc5-6db930f02c71"
     ],
-    "paragraph.a9cb2b6e-7cc5-4dbd-a83b-1d66fc03db3f": [],
-    "paragraph.9f52c3a8-381d-47e5-a894-28b614bad9d6": [],
-    "paragraph.ba7a2d5f-26c5-4944-8dda-d08dbe3e4589": [],
-    "paragraph.5ca211b4-d893-4008-9927-11cd747d3088": [],
-    "paragraph.a65ade8d-d080-40b7-83b2-1af1e6eb66a6": [],
-    "paragraph.0b91ef74-595c-414d-b804-b3947babbd16": [],
     "paragraph.bd7b72ce-f6b2-4fca-aebd-05b71d29a298": [],
     "paragraph.1b7a5bac-b3b1-4b12-b81a-b8cda2f111f4": [
         "media.28d21ad5-0f91-4745-bbc4-b7957b8eb4ef",
@@ -6611,9 +6606,6 @@
     "path_alias.d225c6a1-02bb-46b7-979e-42d030a0427d": [
         "node.c8296451-798f-46a5-b88f-41bc248b898e"
     ],
-    "redirect.23bdb1e8-aa04-4c80-bab9-38ce504c3ca8": [
-        "user.fbb7bd43-6d18-4519-b11a-b47733d71451"
-    ],
     "path_alias.f88674e0-36c1-4ee6-9f93-521c6d58dfa2": [
         "node.80b2fc00-0390-42eb-be45-4eb051a2cbe6"
     ],
@@ -7701,5 +7693,25 @@
         "user.fbb7bd43-6d18-4519-b11a-b47733d71451",
         "file.a2019cca-2943-4238-ae85-38a7c28e11d5",
         "taxonomy_term.05549d0a-c69d-4061-bd3f-062b131dd878"
-    ]
+    ],
+    "paragraph.2141e828-bf02-4d3b-9ec5-c8ca4959a74f": [],
+    "paragraph.bdf8833a-0655-4a49-9f6f-7d288e22f4b1": [
+        "media.f75df1f8-6810-4d96-9232-b0d8daf8085b",
+        "media.a3125d3a-3722-407f-8697-f5b5f176877f",
+        "media.68b678c2-1aae-4816-bc6e-80b79c870303",
+        "media.4265640a-d892-4fb7-bef1-9d7c41a199c4",
+        "media.0f9658d4-581d-4817-9c8f-f1217948c588",
+        "media.e9e78b5d-da24-4366-a0a4-21b930923336"
+    ],
+    "path_alias.b808123b-a628-4fc5-8982-0417503fcb61": [
+        "node.37889bb0-fbef-465b-90ac-54b6fe78d35b"
+    ],
+    "node.37889bb0-fbef-465b-90ac-54b6fe78d35b": [
+        "user.fbb7bd43-6d18-4519-b11a-b47733d71451",
+        "paragraph.2141e828-bf02-4d3b-9ec5-c8ca4959a74f"
+    ],
+    "shortcut.4e641688-4776-43b9-8fa9-57c6767c3f8b": [],
+    "paragraph.e9d2c88b-7090-4f56-a34d-c661c04f8e99": [],
+    "paragraph.b2517601-a49a-4b8e-b483-ae783bb3febe": [],
+    "paragraph.0ed7bea6-51dd-467f-8c1d-18fc95205c6f": []
 }

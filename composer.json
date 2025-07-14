@@ -28,11 +28,14 @@
         "drupal/core-project-message": "10.5.1",
         "drupal/core-recommended": "10.5.1",
         "drupal/gin": "^4.0",
+        "drupal/gin_lb": "^1.0@RC",
         "drupal/gin_toolbar": "^2.0",
         "drupal/gridstack": "^3.0",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/layout_builder_component_attributes": "^2.2",
+        "drupal/layout_builder_customizer": "^1.0",
         "drupal/layout_builder_modal": "^2.0",
+        "drupal/layout_builder_reorder": "^2.0",
         "drupal/lite_youtube_embed": "^1.0",
         "drupal/mason": "^2.0",
         "drupal/media_gallery": "^3.0",
@@ -48,6 +51,7 @@
         "drupal/tome": "^1.13",
         "drupal/views_bulk_edit": "^3.0",
         "drupal/views_infinite_scroll": "^2.0",
+        "drupal/viewsreference": "^2.0@beta",
         "drush/drush": "^13.3"
     },
     "conflict": {

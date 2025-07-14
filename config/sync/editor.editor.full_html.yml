@@ -149,6 +149,34 @@ settings:
       options: {  }
       use_default_markers: true
       attach_styles: false
+    ckeditor5_plugin_pack_layout_table__table_properties:
+      use_default_colors: true
+      use_hex_colors: false
+      default_table_properties:
+        border_style: ''
+        color_picker: hsl
+        use_default_border_color: false
+        border_color: '#000000'
+        border_width: ''
+        use_default_bg_color: false
+        bg_color: '#000000'
+        width: ''
+        height: ''
+        alignment: ''
+      default_table_cell_properties:
+        border_style: ''
+        color_picker: hsl
+        use_default_border_color: false
+        border_color: '#000000'
+        border_width: ''
+        use_default_bg_color: false
+        bg_color: '#000000'
+        width: ''
+        height: ''
+        text_alignment: left
+        padding: ''
+        vertical_alignment: middle
+      colors: {  }
     ckeditor5_plugin_pack_link_attributes__link_attributes:
       attributes: {  }
     ckeditor5_plugin_pack_paste_markdown__paste_markdown:

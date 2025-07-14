@@ -1,0 +1,28 @@
+uuid: d98ddada-f706-418b-970d-a740fcda5194
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_list.field_media_list__item
+    - paragraphs.paragraphs_type.media_list
+  module:
+    - nomarkup
+id: paragraph.media_list.default
+targetEntityType: paragraph
+bundle: media_list
+mode: default
+content:
+  field_media_list__item:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: square
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: '1'
+    weight: 0
+    region: content
+hidden: {  }

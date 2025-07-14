@@ -49,7 +49,7 @@
         font-family: "Alatsi", serif;
 /*
         &.is-active {
-            color: #fa2f2f !important;
+            color: var(--orange) !important;
             font-size: var(--fs-md);
           } */
       }
@@ -58,7 +58,7 @@
       order: 0;
 
       a {
-        color: #fa2f2f !important;
+        color: var(--orange) !important;
         /* font-size: var(--fs-md); */
       }
     }

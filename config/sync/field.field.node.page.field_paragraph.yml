@@ -6,7 +6,9 @@ dependencies:
     - field.storage.node.field_paragraph
     - node.type.page
     - paragraphs.paragraphs_type.filmstrip
+    - paragraphs.paragraphs_type.media_list
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.view
   module:
     - entity_reference_revisions
 id: node.page.field_paragraph
@@ -24,7 +26,9 @@ settings:
   handler_settings:
     target_bundles:
       filmstrip: filmstrip
+      media_list: media_list
       text: text
+      view: view
     negate: 0
     target_bundles_drag_drop:
       filmframe:
@@ -33,7 +37,16 @@ settings:
       filmstrip:
         weight: 4
         enabled: true
+      media_list:
+        weight: 5
+        enabled: true
       text:
+        weight: 6
+        enabled: true
+      view:
+        weight: 11
+        enabled: true
+      wrapper:
         weight: 6
         enabled: true
 field_type: entity_reference_revisions

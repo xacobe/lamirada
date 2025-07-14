@@ -26,6 +26,8 @@ base:
         weight: -10
       css/components/menus.css:
         weight: -10
+      css/components/menu-mobile.css:
+        weight: -10
       css/layout/sections.css:
         weight: -10
       css/base/core/action-links.css:
@@ -143,6 +145,12 @@ grid-plus:
     js/grid-plus.js: {}
   dependencies:
     - core/jquery
+    - core/drupal
+menu-mobile:
+  version: 1.0
+  js:
+    js/menu-mobile.js: {}
+  dependencies:
     - core/drupal
 user:
   version: VERSION
