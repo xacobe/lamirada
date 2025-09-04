@@ -43,6 +43,7 @@
         "drupal/outlayer": "^2.0",
         "drupal/pathauto": "^1.13",
         "drupal/photoswipe": "^5.0",
+        "drupal/rabbit_hole": "^1.0",
         "drupal/redirect": "^1.11",
         "drupal/simple_block": "^1.7",
         "drupal/splide": "^2.0",

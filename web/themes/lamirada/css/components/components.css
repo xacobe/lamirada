@@ -6,7 +6,7 @@
 
 .path-frontpage .dialog-off-canvas-main-canvas {
   height: 100dvh;
-  /* overflow: hidden; */
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
@@ -45,7 +45,7 @@ main {
 }
 
 #showVideos.active {
-  transform: translateY(0);
+  transform: translateY(-1rem);
 
   @media all and (min-width: 768px) {
     transform: translateY(0);
