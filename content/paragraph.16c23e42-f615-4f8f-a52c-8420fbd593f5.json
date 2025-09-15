@@ -42,6 +42,7 @@
             "value": true
         }
     ],
+    "admin_title": [],
     "field_filmstrip": [
         {
             "target_type": "paragraph",

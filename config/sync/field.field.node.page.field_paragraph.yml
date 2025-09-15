@@ -11,6 +11,10 @@ dependencies:
     - paragraphs.paragraphs_type.view
   module:
     - entity_reference_revisions
+    - paragraph_blocks
+third_party_settings:
+  paragraph_blocks:
+    status: 1
 id: node.page.field_paragraph
 field_name: field_paragraph
 entity_type: node
@@ -45,8 +49,5 @@ settings:
         enabled: true
       view:
         weight: 11
-        enabled: true
-      wrapper:
-        weight: 6
         enabled: true
 field_type: entity_reference_revisions

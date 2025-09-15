@@ -1,9 +1,10 @@
 /* Main menú */
 .main-menu {
-  height: 50dvh;
+  height: 35dvh;
   display: flex;
   flex-direction: column;
-  padding-block: 2rem;
+  padding-block-start: 2rem;
+  padding-block-end: 1rem;
 
   @media all and (min-width: 768px) {
     height: 50dvh;

@@ -75,48 +75,7 @@ main {
   }
 }
 
-#contacto {
 
-  .block {
-    display: flex;
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      height: auto;
-      inset: 0;
-      width: 100vw;
-      margin-left: calc(50% - 50vw);
-      z-index: -4;
-      background-size: cover;
-      background-image: url("../../images/portada-800w.jpg");
-      background-attachment: fixed;
-      background-position: top right;
-    }
-
-    h2 {
-      writing-mode: sideways-lr;
-      height: 100%;
-      margin-block-end: auto;
-      width: max-content;
-      text-align: center;
-      font-family: "Alatsi", serif;
-      font-size: var(--fs-xl);
-      font-weight: lighter;
-      color: white;
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: var(--fs-md);
-      width: 100%;
-    }
-  }
-}
 
 .section {
   position: relative;
@@ -172,12 +131,14 @@ main {
   .splide--nav {
     right: inherit;
     width: inherit;
+    top: -6rem;
     position: relative;
 
     @media all and (min-width: 768px) {
       grid-column: 8 / 13;
       order: 1;
       grid-column: 10 / 13;
+      top: initial;
     }
 
     @media all and (min-width: 992px) {
@@ -314,15 +275,19 @@ main {
       text-align: right;
     }
     .field--name-field-video-client {
-      color: grey
+      color: grey;
+      display: none;
     }
     .field--name-field-video-anho {
       margin-inline-start: auto;
       padding-inline-end: .2rem;
+      display: none;
     }
     .field--name-field-video-title {
       font-size: 1.8rem;
       padding-block-start: 1rem;
+      display: none;
+
     }
 
     @media all and (min-width: 768px) {
@@ -331,11 +296,13 @@ main {
       .field--name-field-video-client,
       .field--name-field-video-anho {
         font-size: 1.375rem;
+        display: block;
       }
 
       .field--name-field-video-title {
         font-size: 2.8rem;
         padding-block-start: 1rem;
+        display: block;
       }
     }
   }

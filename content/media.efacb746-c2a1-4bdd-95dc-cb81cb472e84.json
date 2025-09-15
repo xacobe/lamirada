@@ -28,7 +28,11 @@
             "target_uuid": "fbb7bd43-6d18-4519-b11a-b47733d71451"
         }
     ],
-    "revision_log_message": [],
+    "revision_log_message": [
+        {
+            "value": null
+        }
+    ],
     "status": [
         {
             "value": true

@@ -1,12 +1,20 @@
+/* Frontpage */
+lite-youtube  {
+  cursor: none !important;
+}
+.section--servicios .lyt-playbtn {
+  display: none;
+}
+
 /* Video */
 
 @media all and (max-width: 768px) {
 
   .path-video {
     .header {
-      display: flex;
+      /* display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: center; */
     }
 
     .system-branding-block {
@@ -26,7 +34,6 @@
     }
 
     .menu--video {
-      width: 45%;
     }
 
     .menu--video {
@@ -49,17 +56,8 @@
 }
 .section--servicios {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  @media all and (min-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  @media all and (min-width: 992px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  @media all and (min-width: 1200px) {
-    grid-template-columns: repeat(8, 1fr);
-  }
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .2rem;
 
   > * {
     overflow: hidden;
@@ -97,12 +95,6 @@
       font-size: 3rem;
       grid-column: span 2;
     }
-    @media all and (min-width: 992px) {
-      grid-column: span 2;
-    }
-    @media all and (min-width: 1200px) {
-      grid-column: span 2;
-    }
   }
 
   .services__body {
@@ -134,6 +126,65 @@
 
 }
 
-.wrapper-title-section {
+/* Contacto */
+#contacto {
+
+
+}
+.section--contacto {
+  .block {
+      display: flex;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: auto;
+        inset: 0;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        z-index: -4;
+        background-size: cover;
+        background-image: url("../../images/portada-800w.jpg");
+        background-attachment: fixed;
+        background-position: top right;
+      }
+
+      h2 {
+        writing-mode: sideways-lr;
+        height: 100%;
+        margin: 0;
+        width: max-content;
+        text-align: center;
+        font-family: "Alatsi", serif;
+        font-size: var(--fs-xl);
+        font-weight: lighter;
+        color: white;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        width: 100%;
+        color: white;
+
+        a {
+          color: var(--orange);
+          text-transform: lowercase;
+        }
+      }
+    }
+
+  @media all and (min-width: 768px) {
+
+    h2 {
+      margin-block-end: auto;
+      font-size: var(--fs-xl);
+    }
+
+    }
 
 }

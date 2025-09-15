@@ -41,6 +41,7 @@
         "drupal/media_gallery": "^3.0",
         "drupal/nomarkup": "^1.0",
         "drupal/outlayer": "^2.0",
+        "drupal/paragraph_blocks": "^4.1",
         "drupal/pathauto": "^1.13",
         "drupal/photoswipe": "^5.0",
         "drupal/rabbit_hole": "^1.0",

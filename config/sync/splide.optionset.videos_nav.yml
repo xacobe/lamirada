@@ -20,14 +20,19 @@ options:
     type: loop
     height: 80dvh
     perPage: 12
+    perMove: 1
     clones: 7
+    cloneStatus: false
     easing: ease-in
     arrows: 'false'
     pagination: 'false'
     keyboard: 'true'
+    drag: free
     direction: ttb
     isNavigation: true
     trimSpace: move
+    live: false
     easingOverride: ease-in
     wheel: true
-    wheelSleep: 50
+    releaseWheel: true
+    wheelSleep: 1000

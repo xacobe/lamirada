@@ -12,9 +12,9 @@ lite-youtube  {
 
   .path-video {
     .header {
-      display: flex;
+      /* display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: center; */
     }
 
     .system-branding-block {
@@ -34,7 +34,6 @@ lite-youtube  {
     }
 
     .menu--video {
-      width: 45%;
     }
 
     .menu--video {
@@ -124,5 +123,78 @@ lite-youtube  {
       background-size: 20%;
     }
   }
+
+}
+
+/* Contacto */
+#contacto {
+
+
+}
+.section--contacto {
+  .block {
+      display: flex;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0;
+        height: 100dvh;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        z-index: -4;
+        background-size: cover;
+        background-image: url("../../images/portada-800w.jpg");
+        background-attachment: fixed;
+        background-position: top right;
+      }
+
+      h2 {
+        writing-mode: sideways-lr;
+        height: 100%;
+        margin: 0;
+        width: max-content;
+        text-align: center;
+        font-family: "Alatsi", serif;
+        font-size: var(--fs-xl);
+        font-weight: lighter;
+        color: white;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        width: 100%;
+        color: white;
+
+        a {
+          color: var(--orange);
+          text-transform: lowercase;
+        }
+      }
+                @media all and (min-width: 768px) {
+
+                  div {
+                    font-size: var(--fs-md);
+                  }
+                  a {
+                    font-size: var(--fs-md);
+                  }
+
+                }
+    }
+
+  @media all and (min-width: 768px) {
+
+    h2 {
+      margin-block-end: auto;
+      font-size: var(--fs-xl);
+    }
+
+    }
 
 }

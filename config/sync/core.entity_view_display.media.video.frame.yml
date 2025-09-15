@@ -47,12 +47,12 @@ content:
       width: 480
       height: 270
     third_party_settings:
+      blazy:
+        blazy: true
       nomarkup:
         enabled: true
         separator: '|'
         referenced_entity: ''
-      blazy:
-        blazy: false
     weight: 0
     region: content
 hidden:
