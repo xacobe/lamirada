@@ -1,0 +1,22 @@
+uuid: 21c12470-8df6-4db7-a659-cae455468a5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lamirada
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: lamirada_content
+theme: lamirada
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

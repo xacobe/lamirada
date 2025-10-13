@@ -1,0 +1,20 @@
+uuid: 3e0d0d89-a459-4ea9-9037-204efc5765ef
+langcode: en
+status: false
+dependencies:
+  theme:
+    - laborda
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: laborda_primary_admin_actions
+theme: laborda
+region: header
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

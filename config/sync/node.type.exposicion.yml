@@ -1,0 +1,17 @@
+uuid: 3021c62a-6afe-4da5-b155-7cdb313cb641
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Exposición
+type: exposicion
+description: 'Exposiciones de fotografía'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

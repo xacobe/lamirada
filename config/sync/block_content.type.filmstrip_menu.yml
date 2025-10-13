@@ -1,0 +1,8 @@
+uuid: 49f49dba-bef7-4b4a-9830-586da9294f3a
+langcode: en
+status: true
+dependencies: {  }
+id: filmstrip_menu
+label: 'Filmstrip Menú'
+revision: false
+description: 'A filmstrip shaped menu. Used on frontpage video and photo.'

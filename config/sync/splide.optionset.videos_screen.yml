@@ -1,0 +1,39 @@
+uuid: bf2f5e9c-3d79-4e5f-a8b9-50f869a38d11
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - splide_x
+_core:
+  default_config_hash: 6AyKDhB8ct8kQL0wr1FCv6K1GOSJSqr8udbVOuVz0uI
+id: videos_screen
+name: videos_screen
+weight: -10
+label: 'Videos Screen'
+group: main
+skin: fullscreen
+breakpoint: 1
+optimized: true
+options:
+  settings:
+    type: fade
+    width: 100vw
+    height: 100vh
+    fixedHeight: ''
+    heightRatio: ''
+    perMove: 12
+    focus: center
+    arrows: 'false'
+    pagination: 'false'
+    snap: true
+  breakpoints:
+    -
+      breakpoint: 768
+      unsplide: false
+      settings:
+        height: ''
+        fixedHeight: ''
+        heightRatio: '0.75'
+        arrows: 'false'
+        pagination: 'false'

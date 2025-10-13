@@ -1,0 +1,29 @@
+uuid: 64a4234f-3126-4852-b3ba-4c0cd7242ea9
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.photo
+  module:
+    - system
+  theme:
+    - lamirada
+id: lamirada_menufotografia
+theme: lamirada
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:photo'
+settings:
+  id: 'system_menu_block:photo'
+  label: 'Menú fotografía'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/fotografia/*'

@@ -1,0 +1,11 @@
+uuid: c7deb65b-0e34-456a-aafa-171c7c63b853
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: videos_y_fotos_menu_principal
+title: 'Videos y Fotos menú principal'
+content:
+  value: '<nav class="filmstrip__main-menu"><div class="filmstrip__menu-item" id="showPhotos" data-type="fotografia">Fotografía</div><div class="filmstrip__menu-item" id="showVideos" data-type="video">Video</div></nav>'
+  format: full_html

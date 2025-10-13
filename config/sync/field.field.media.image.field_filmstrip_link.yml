@@ -1,0 +1,23 @@
+uuid: 40f2cbf9-c790-4090-a29f-d21400c8a1bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_filmstrip_link
+    - media.type.image
+  module:
+    - link
+id: media.image.field_filmstrip_link
+field_name: field_filmstrip_link
+entity_type: media
+bundle: image
+label: Enlace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link

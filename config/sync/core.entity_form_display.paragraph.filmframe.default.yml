@@ -1,0 +1,35 @@
+uuid: ce66142f-0319-40d5-afa6-b79cf33d2a54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.filmframe.field_filmstrip_item
+    - paragraphs.paragraphs_type.filmframe
+  module:
+    - inline_entity_form
+id: paragraph.filmframe.default
+targetEntityType: paragraph
+bundle: filmframe
+mode: default
+content:
+  field_filmstrip_item:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: true
+      collapsed: true
+      revision: false
+      removed_reference: optional
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

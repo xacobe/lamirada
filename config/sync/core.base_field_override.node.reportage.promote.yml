@@ -1,0 +1,22 @@
+uuid: b250ef7f-62c0-4287-a340-6dc3a019b385
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.reportage
+id: node.reportage.promote
+field_name: promote
+entity_type: node
+bundle: reportage
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

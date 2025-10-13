@@ -1,0 +1,21 @@
+uuid: 977abbc6-b1ca-4cf0-b76e-ff6b988ee667
+langcode: es
+status: true
+dependencies: {  }
+name: 300x300_square
+label: '300X300 Square'
+effects:
+  6b4e318e-d04b-48a9-9bf8-5304f2c09d65:
+    uuid: 6b4e318e-d04b-48a9-9bf8-5304f2c09d65
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      anchor: center-center
+  c5377582-1d6c-4495-ba27-e1e3b53fa832:
+    uuid: c5377582-1d6c-4495-ba27-e1e3b53fa832
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

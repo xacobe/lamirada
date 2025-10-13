@@ -1,0 +1,29 @@
+uuid: fa54500c-280c-4fb4-b9f6-4e168f293af3
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.secondary-menu
+  module:
+    - system
+  theme:
+    - lamirada
+id: lamirada_menusecundario
+theme: lamirada
+region: header
+weight: 1
+provider: null
+plugin: 'system_menu_block:secondary-menu'
+settings:
+  id: 'system_menu_block:secondary-menu'
+  label: 'Menú secundario'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

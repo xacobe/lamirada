@@ -1,0 +1,30 @@
+uuid: 25f1eb9d-a574-47fa-a67d-2d3bc66fcbc4
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.half_wide
+    - image.style.width_300
+    - image.style.witdh_150
+  theme:
+    - laborda
+id: photo_filmstrip
+label: 'Photo Filmstrip'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: width_300
+    breakpoint_id: laborda.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: witdh_150
+    breakpoint_id: laborda.narrow
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: witdh_150
+    breakpoint_id: laborda.mobile
+    multiplier: 1x
+breakpoint_group: laborda
+fallback_image_style: half_wide

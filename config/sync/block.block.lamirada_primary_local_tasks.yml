@@ -1,0 +1,22 @@
+uuid: a8c38f9c-0de3-41f4-bab6-ed0364140634
+langcode: en
+status: false
+dependencies:
+  theme:
+    - lamirada
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: lamirada_primary_local_tasks
+theme: lamirada
+region: header
+weight: 2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,109 @@
+uuid: 14d11035-58ae-47ee-89fe-a6f66f1bf1a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.remote_video.field_image_video_alt
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_video_anho
+    - field.field.media.remote_video.field_video_client
+    - field.field.media.remote_video.field_video_tags
+    - field.field.media.remote_video.field_video_title
+    - media.type.remote_video
+  module:
+    - media
+    - media_library
+    - path
+_core:
+  default_config_hash: pM8mGlwfpvfG_y5tZn0lGAXFLXz2_yKkL7MvWZsRqdA
+id: media.remote_video.default
+targetEntityType: media
+bundle: remote_video
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image_video_alt:
+    type: media_library_widget
+    weight: 103
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_media_oembed_video:
+    type: oembed_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video_anho:
+    type: number
+    weight: 106
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_video_client:
+    type: string_textfield
+    weight: 105
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video_tags:
+    type: entity_reference_autocomplete
+    weight: 101
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_video_title:
+    type: string_textfield
+    weight: 104
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  name: true

@@ -1,0 +1,10 @@
+uuid: 61526af7-f278-4a9c-88a3-2178e3d05ca3
+langcode: es
+status: true
+dependencies: {  }
+id: media_list
+label: 'Lista de medios'
+icon_uuid: null
+icon_default: null
+description: 'Una lista con medios: imágenes o videos. '
+behavior_plugins: {  }

@@ -1,0 +1,77 @@
+uuid: 6a1a1985-d9d9-4b78-85b4-eb54029706c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.remote_video.field_image_video_alt
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_video_anho
+    - field.field.media.remote_video.field_video_client
+    - field.field.media.remote_video.field_video_tags
+    - field.field.media.remote_video.field_video_title
+    - media.type.remote_video
+  module:
+    - lite_youtube_embed
+    - nomarkup
+_core:
+  default_config_hash: ZdPcl2hPxl5pgv3pI-07R7h51OjeUeKJTy-ab1NfM34
+id: media.remote_video.full
+targetEntityType: media
+bundle: remote_video
+mode: full
+content:
+  field_media_oembed_video:
+    type: lite_youtube_embed
+    label: hidden
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_video_anho:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: false
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 3
+    region: content
+  field_video_client:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+  field_video_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_image_video_alt: true
+  field_video_tags: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

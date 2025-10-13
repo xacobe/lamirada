@@ -1,0 +1,33 @@
+uuid: 22938819-9da8-4a6c-b83a-9795bd7ec94e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wedding_media
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.wedding
+id: node.wedding.field_wedding_media
+field_name: field_wedding_media
+entity_type: node
+bundle: wedding
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

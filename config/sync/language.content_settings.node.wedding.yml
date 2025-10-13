@@ -1,0 +1,11 @@
+uuid: 573a77c8-3fc3-49de-a8dc-857973fbc236
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.wedding
+id: node.wedding
+target_entity_type_id: node
+target_bundle: wedding
+default_langcode: site_default
+language_alterable: false

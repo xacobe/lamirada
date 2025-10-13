@@ -1,0 +1,9 @@
+uuid: ae7abfaa-c512-4e79-8b29-3da36da0641e
+langcode: es
+status: true
+dependencies: {  }
+name: Cliente
+vid: cliente
+description: 'Artista o cliente que hizo el encargo'
+weight: 0
+new_revision: false

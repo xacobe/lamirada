@@ -1,0 +1,11 @@
+uuid: 9a3d4d8b-9994-41e1-abf2-6d25fd4241b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: menu_fotografia
+title: 'Menú Fotografía'
+content:
+  value: '<section class="filmstrip"><p><a href="#">Link1</a></p></section>'
+  format: full_html

@@ -1,0 +1,20 @@
+uuid: 40bc754b-ebdc-4754-bc44-391aed3e9579
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - splide_x
+_core:
+  default_config_hash: eZMC27KBagnq0jddgIjT2Dx8wkd3LSvdcbE0F-K75Sk
+name: splide_fullscreen
+label: 'Splide fullscreen (1600x1200)'
+effects:
+  8e56f5d5-7f8e-44bb-ae00-c506185a6f14:
+    uuid: 8e56f5d5-7f8e-44bb-ae00-c506185a6f14
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 1200
+      anchor: center-center

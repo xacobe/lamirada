@@ -1,0 +1,19 @@
+uuid: 62604e50-a601-4ca7-a7e7-fdcd9550e206
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_video_client
+    - media.type.remote_video
+id: media.remote_video.field_video_client
+field_name: field_video_client
+entity_type: media
+bundle: remote_video
+label: Cliente
+description: 'El nombre del artista o cliente'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

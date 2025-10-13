@@ -1,0 +1,28 @@
+uuid: 7cf38d70-207e-469c-bf5e-6ca7d5f7e784
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.filmframe.field_filmstrip_item
+    - paragraphs.paragraphs_type.filmframe
+  module:
+    - nomarkup
+id: paragraph.filmframe.default
+targetEntityType: paragraph
+bundle: filmframe
+mode: default
+content:
+  field_filmstrip_item:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: frame
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: ''
+        referenced_entity: '0'
+    weight: 0
+    region: content
+hidden: {  }

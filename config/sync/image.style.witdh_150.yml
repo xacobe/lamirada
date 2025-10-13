@@ -1,0 +1,15 @@
+uuid: 4799bec4-553f-4e9b-b80c-5bb1360be155
+langcode: es
+status: true
+dependencies: {  }
+name: witdh_150
+label: 'Ancho (150)'
+effects:
+  af765e42-74f2-4632-bdd8-3c7260cb182e:
+    uuid: af765e42-74f2-4632-bdd8-3c7260cb182e
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: null
+      upscale: false

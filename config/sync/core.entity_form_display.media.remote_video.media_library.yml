@@ -1,0 +1,39 @@
+uuid: ea13651b-2ba9-49f8-9ebc-8d18a3db7437
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.remote_video.field_image_video_alt
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_video_anho
+    - field.field.media.remote_video.field_video_client
+    - field.field.media.remote_video.field_video_tags
+    - field.field.media.remote_video.field_video_title
+    - media.type.remote_video
+_core:
+  default_config_hash: TBgPW-uaXRaICBwLaVc16rXpRiLSknDIdF9q0XL7qso
+id: media.remote_video.media_library
+targetEntityType: media
+bundle: remote_video
+mode: media_library
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_image_video_alt: true
+  field_media_oembed_video: true
+  field_video_anho: true
+  field_video_client: true
+  field_video_tags: true
+  field_video_title: true
+  name: true
+  path: true
+  status: true
+  uid: true

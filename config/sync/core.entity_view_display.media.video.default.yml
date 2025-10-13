@@ -1,0 +1,62 @@
+uuid: 81d915cd-9e34-4114-b04e-813fd9e9e292
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video.field_filmstrip_link
+    - field.field.media.video.field_media_video_file
+    - media.type.video
+  module:
+    - blazy
+    - file
+    - link
+    - nomarkup
+_core:
+  default_config_hash: SxvbuGh-6cQMxl9bBV27-hGI46u7ZvwlMm5ObaJMNnw
+id: media.video.default
+targetEntityType: media
+bundle: video
+mode: default
+content:
+  field_filmstrip_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
+    region: content
+  field_media_video_file:
+    type: file_video
+    label: visually_hidden
+    settings:
+      controls: false
+      autoplay: true
+      loop: true
+      multiple_file_display_type: tags
+      muted: true
+      width: 640
+      height: 480
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+      blazy:
+        blazy: false
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,25 @@
+uuid: 03a5325e-11e2-42d2-a5bd-4096ffe063cd
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:clean_block:12af1ce7-b096-4e8d-be89-d6fa07abd846'
+  module:
+    - block_content
+  theme:
+    - lamirada
+id: lamirada_mensajepiedepagina
+theme: lamirada
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:12af1ce7-b096-4e8d-be89-d6fa07abd846'
+settings:
+  id: 'block_content:12af1ce7-b096-4e8d-be89-d6fa07abd846'
+  label: 'Mensaje pié de página'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

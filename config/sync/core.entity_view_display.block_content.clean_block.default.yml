@@ -1,0 +1,28 @@
+uuid: 30410d9e-9bc6-444b-879a-52f98294747c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.clean_block
+    - field.field.block_content.clean_block.field_clean_code
+  module:
+    - nomarkup
+    - text
+id: block_content.clean_block.default
+targetEntityType: block_content
+bundle: clean_block
+mode: default
+content:
+  field_clean_code:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+hidden:
+  langcode: true

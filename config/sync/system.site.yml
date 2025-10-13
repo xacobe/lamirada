@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: es
+uuid: b52f38df-457c-4967-84ef-53ada95a3564
+name: 'Eduardo Laborda'
+mail: admin@example.com
+slogan: 'Video | Fotografía'
+page:
+  403: ''
+  404: ''
+  front: /node/26
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
+mail_notification: null

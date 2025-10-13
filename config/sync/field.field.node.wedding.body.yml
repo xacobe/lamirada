@@ -1,0 +1,24 @@
+uuid: a267eecb-d631-45fe-81f6-18d606d3a598
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.wedding
+  module:
+    - text
+id: node.wedding.body
+field_name: body
+entity_type: node
+bundle: wedding
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

@@ -1,0 +1,39 @@
+uuid: 395633ef-b66b-450c-82d0-1a069df7de63
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_filmstrip
+    - paragraphs.paragraphs_type.filmframe
+    - paragraphs.paragraphs_type.filmstrip
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: paragraph.filmstrip.field_filmstrip
+field_name: field_filmstrip
+entity_type: paragraph
+bundle: filmstrip
+label: Filmstrip
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      filmframe: filmframe
+      text: text
+    negate: 0
+    target_bundles_drag_drop:
+      filmframe:
+        weight: 3
+        enabled: true
+      filmstrip:
+        weight: 4
+        enabled: false
+      text:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

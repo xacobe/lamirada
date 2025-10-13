@@ -1,0 +1,11 @@
+uuid: 43fad3cf-0098-47db-8b4c-4fe84117056d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: contact_section_title
+title: 'Contact section title'
+content:
+  value: '<h2 class="title-contacto">Contacto</h2>'
+  format: full_html

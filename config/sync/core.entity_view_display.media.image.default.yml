@@ -1,0 +1,47 @@
+uuid: 707cb6bf-5500-48a3-8a62-d418f9fe6dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_filmstrip_link
+    - field.field.media.image.field_media_image
+    - media.type.image
+  module:
+    - image
+    - link
+_core:
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_filmstrip_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

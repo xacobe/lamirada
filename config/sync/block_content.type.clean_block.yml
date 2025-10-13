@@ -1,0 +1,8 @@
+uuid: bfa90189-cbfb-418c-8892-4485bf5e335c
+langcode: en
+status: true
+dependencies: {  }
+id: clean_block
+label: 'Clean block'
+revision: false
+description: 'A block without any markup, to use to paste html without any wrapper around'

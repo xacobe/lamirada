@@ -1,0 +1,47 @@
+uuid: 0a8bdd4c-92a7-4efa-98a6-c921ac46ff79
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.frame
+    - field.field.media.remote_video.field_image_video_alt
+    - field.field.media.remote_video.field_media_oembed_video
+    - field.field.media.remote_video.field_video_anho
+    - field.field.media.remote_video.field_video_client
+    - field.field.media.remote_video.field_video_tags
+    - field.field.media.remote_video.field_video_title
+    - media.type.remote_video
+  module:
+    - lite_youtube_embed
+    - nomarkup
+_core:
+  default_config_hash: ZdPcl2hPxl5pgv3pI-07R7h51OjeUeKJTy-ab1NfM34
+id: media.remote_video.frame
+targetEntityType: media
+bundle: remote_video
+mode: frame
+content:
+  field_media_oembed_video:
+    type: lite_youtube_embed
+    label: hidden
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_image_video_alt: true
+  field_video_anho: true
+  field_video_client: true
+  field_video_tags: true
+  field_video_title: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

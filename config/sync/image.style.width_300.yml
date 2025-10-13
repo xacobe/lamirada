@@ -1,0 +1,15 @@
+uuid: 1b6c4735-7d53-4ea4-b153-210608b6e954
+langcode: es
+status: true
+dependencies: {  }
+name: width_300
+label: 'Ancho (300)'
+effects:
+  13036aed-cc6b-451c-a98a-ac488d057e07:
+    uuid: 13036aed-cc6b-451c-a98a-ac488d057e07
+    id: image_scale
+    weight: 1
+    data:
+      width: 300
+      height: null
+      upscale: false

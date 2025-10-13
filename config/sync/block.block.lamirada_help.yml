@@ -1,0 +1,22 @@
+uuid: c179b967-cb5a-4eaf-883c-44d28837bcee
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - lamirada
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: lamirada_help
+theme: lamirada
+region: header
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

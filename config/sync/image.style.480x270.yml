@@ -1,0 +1,15 @@
+uuid: 578717d2-1fa3-4c38-89fc-05328b2a9d56
+langcode: en
+status: true
+dependencies: {  }
+name: 480x270
+label: '480x270 '
+effects:
+  ff28c3bf-1b80-4a5c-b208-ff2fa034a818:
+    uuid: ff28c3bf-1b80-4a5c-b208-ff2fa034a818
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 270
+      anchor: center-center

@@ -1,0 +1,10 @@
+uuid: 7e50303e-bcc5-4ba5-84cd-06ee43e02249
+langcode: es
+status: true
+dependencies: {  }
+id: filmstrip
+label: Filmstrip
+icon_uuid: null
+icon_default: null
+description: 'Filmstrip with unlimited items (photo + video)'
+behavior_plugins: {  }

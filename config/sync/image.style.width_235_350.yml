@@ -1,0 +1,15 @@
+uuid: aafac94f-822c-4c22-a5e1-5b76b682f096
+langcode: es
+status: true
+dependencies: {  }
+name: width_235_350
+label: 'Ancho (235x350)'
+effects:
+  8a10c971-8c17-4f81-a1e4-9a688b8b1ed1:
+    uuid: 8a10c971-8c17-4f81-a1e4-9a688b8b1ed1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 235
+      height: 350
+      anchor: center-center

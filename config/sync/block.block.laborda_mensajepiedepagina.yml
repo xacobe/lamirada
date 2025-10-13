@@ -1,0 +1,25 @@
+uuid: adbc7e29-8d63-4f77-9c4e-2e9506198be8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:clean_block:12af1ce7-b096-4e8d-be89-d6fa07abd846'
+  module:
+    - block_content
+  theme:
+    - laborda
+id: laborda_mensajepiedepagina
+theme: laborda
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:12af1ce7-b096-4e8d-be89-d6fa07abd846'
+settings:
+  id: 'block_content:12af1ce7-b096-4e8d-be89-d6fa07abd846'
+  label: 'Mensaje pié de página'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

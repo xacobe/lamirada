@@ -1,0 +1,28 @@
+uuid: 18fef878-b25e-4e94-bbf3-c6a50a931781
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - splide_x
+_core:
+  default_config_hash: g8hoecEkzP_4ctTuqzB2bSqcVuyuBG8cRxzRyuAoeYw
+id: x_vtabs
+name: x_vtabs
+weight: 1
+label: 'X VTabs'
+group: nav
+skin: vtabs
+breakpoint: 0
+optimized: true
+options:
+  settings:
+    type: loop
+    height: 420px
+    perPage: 7
+    perMove: 1
+    clones: 3
+    focus: center
+    direction: ttb
+    isNavigation: true
+    wheel: true

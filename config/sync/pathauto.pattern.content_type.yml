@@ -1,0 +1,25 @@
+uuid: 70b70307-d6ce-4ceb-ab0a-7500464fd41b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: content_type
+label: 'Content type'
+type: 'canonical_entities:node'
+pattern: 'fotografia/[node:content-type:name]/[node:title]'
+selection_criteria:
+  fd052454-d03c-424a-91ff-94c46c0ae174:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: fd052454-d03c-424a-91ff-94c46c0ae174
+    context_mapping:
+      node: node
+    bundles:
+      exposicion: exposicion
+      reportage: reportage
+      session: session
+      wedding: wedding
+selection_logic: and
+weight: -5
+relationships: {  }

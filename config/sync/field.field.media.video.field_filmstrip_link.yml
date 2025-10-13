@@ -1,0 +1,23 @@
+uuid: 5cd08577-00f8-4ea8-a944-5f3d299c277f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_filmstrip_link
+    - media.type.video
+  module:
+    - link
+id: media.video.field_filmstrip_link
+field_name: field_filmstrip_link
+entity_type: media
+bundle: video
+label: Enlace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link

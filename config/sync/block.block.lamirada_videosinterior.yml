@@ -1,0 +1,29 @@
+uuid: 5d624217-4e97-47be-bdea-1d422cc52bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.videos-interior
+  module:
+    - system
+  theme:
+    - lamirada
+id: lamirada_videosinterior
+theme: lamirada
+region: content
+weight: -5
+provider: null
+plugin: 'system_menu_block:videos-interior'
+settings:
+  id: 'system_menu_block:videos-interior'
+  label: 'Videos interior'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/videos*'
