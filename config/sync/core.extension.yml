@@ -75,14 +75,9 @@ module:
   paragraph_blocks: 0
   path: 0
   path_alias: 0
-  rabbit_hole: 0
   redirect: 0
   redirect_404: 0
   responsive_image: 0
-  rh_media: 0
-  rh_node: 0
-  rh_taxonomy: 0
-  rh_user: 0
   serialization: 0
   shortcut: 0
   simple_block: 0
@@ -113,7 +108,6 @@ module:
 theme:
   claro: 0
   stable9: 0
-  laborda: 0
   gin: 0
   lamirada: 0
   olivero: 0
