@@ -39,6 +39,7 @@
         "drupal/lite_youtube_embed": "^1.0",
         "drupal/mason": "^2.0",
         "drupal/media_gallery": "^3.0",
+        "drupal/menu_trail_by_path": "^2.2",
         "drupal/nomarkup": "^1.0",
         "drupal/outlayer": "^2.0",
         "drupal/paragraph_blocks": "^4.1",

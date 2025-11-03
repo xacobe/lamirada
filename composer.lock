@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8000b661db46512d9545833ce5e6a90",
+    "content-hash": "e13177fb799071983f53a4666b29f276",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2954,6 +2954,66 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/media_gallery",
                 "issues": "https://www.drupal.org/project/issues/media_gallery"
+            }
+        },
+        {
+            "name": "drupal/menu_trail_by_path",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_trail_by_path.git",
+                "reference": "2.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_trail_by_path-2.2.0.zip",
+                "reference": "2.2.0",
+                "shasum": "aba140af80ad217b6543c10bde312c85d75f945a"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.2.0",
+                    "datestamp": "1747319648",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "davy-r",
+                    "homepage": "https://www.drupal.org/user/3278771"
+                },
+                {
+                    "name": "mbovan",
+                    "homepage": "https://www.drupal.org/user/3149657"
+                },
+                {
+                    "name": "redndahead",
+                    "homepage": "https://www.drupal.org/user/160320"
+                },
+                {
+                    "name": "SeriousMatters",
+                    "homepage": "https://www.drupal.org/user/290439"
+                }
+            ],
+            "description": "Expand menus and set active-trail according to the current path.",
+            "homepage": "https://www.drupal.org/project/menu_trail_by_path",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_trail_by_path"
             }
         },
         {
