@@ -19,7 +19,6 @@
 
 # Carpetas generadas por el sistema
 /node_modules/
-/web/sites/default/files/
 /web/sites/default/settings.local.php
 /.gitattributes
 
