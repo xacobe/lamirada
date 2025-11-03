@@ -305,7 +305,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2 class="services__title">[view:title]</h2><div class="services__body">Sesiones fotográficas, para presentaciones de modelos o productos.</div>'
+          content: '<h2 class="services__title"><a href="/fotografia/sesiones/">[view:title]</a></h2><div class="services__body">Sesiones fotográficas, para presentaciones de modelos o productos.</div>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -471,7 +471,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2 class="services__title">[view:title]</h2><div class="services__body">Reportajes gráficos para documentaciones y presentaciones.</div>'
+          content: '<h2 class="services__title"><a href="/fotografia/reportajes/">[view:title]</a></h2><div class="services__body">Reportajes gráficos para documentaciones y presentaciones.</div>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -629,7 +629,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2 class="services__title">[view:title]</h2><div class="services__body">Inmortaliza la boda captando los momentos más especiales.</div>'
+          content: '<h2 class="services__title"><a href="/fotografia/bodas/bodas">[view:title]</a></h2><div class="services__body">Inmortaliza la boda captando los momentos más especiales.</div>'
           tokenize: false
       display_extenders: {  }
     cache_metadata:

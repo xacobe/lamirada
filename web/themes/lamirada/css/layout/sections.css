@@ -83,9 +83,21 @@ lite-youtube  {
     background-color: var(--orange);
     white-space: nowrap;
 
+    a {
+      color: white !important;
+
+      &:hover {
+        color: var(--orange) !important;
+      }
+    }
+
     &:hover {
       background-color: white;
       color: var(--orange);
+
+      a {
+        color: var(--orange) !important;
+      }
     }
 
     @media all and (min-width: 420px) {

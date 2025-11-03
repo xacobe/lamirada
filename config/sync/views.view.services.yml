@@ -255,7 +255,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2 class="services__title">[view:title]</h2><div class="services__body">Videoclips para bandas y grupos. Los acústicos son videoclips en una sola localización.</div>'
+          content: '<h2 class="services__title"><a href="/video/videoclips/">[view:title]</a></h2><div class="services__body">Videoclips para bandas y grupos. Los acústicos son videoclips en una sola localización.</div>'
           tokenize: false
       display_extenders: {  }
       block_description: Videocips
@@ -362,7 +362,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2 class="services__title">[view:title]</h2><div class="services__body">Anuncios publicitarios, para televisión redes sociales y otros formatos.</div>'
+          content: '<h2 class="services__title"><a href="/video/publicidad/">[view:title]</a></h2><div class="services__body"> Anuncios publicitarios, para televisión redes sociales y otros formatos.</div>'
           tokenize: false
       display_extenders: {  }
       block_description: Videocips
@@ -465,7 +465,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: false
-          content: '<h2 class="services__title">[view:title]</h2><div class="services__body">Documentales sobre cualquier temática y localización.</div>'
+          content: '<h2 class="services__title"><a href="/video/documentales/">[view:title]</a></h2><div class="services__body">Documentales sobre cualquier temática y localización.</div>'
           tokenize: false
       display_extenders: {  }
       block_description: Videocips
