@@ -20,16 +20,17 @@ lite-youtube  {
     .system-branding-block {
       width: 100%;
       align-items: center;
+      padding-inline-start: 0;
     }
 
     .page-title-block {
-      width: 45%;
+      width: 100%;
       padding-inline-end: .2rem;
 
       .page-title {
         padding: 0;
         margin: 0;
-        text-align: right;
+        justify-content: center;
       }
     }
 
@@ -55,8 +56,8 @@ lite-youtube  {
   }
 }
 .section--servicios {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: .2rem;
 
   > * {
@@ -64,9 +65,13 @@ lite-youtube  {
     width: 100%;
     height: auto;
     position: relative;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     box-sizing: border-box;
+
+    flex: 1 1 150px;
+    min-width: 150px;
+    max-width: 100%;
   }
 
   .services__title {
@@ -104,7 +109,7 @@ lite-youtube  {
       font-size: 2rem;
     }
     @media all and (min-width: 768px) {
-      font-size: 3rem;
+      font-size: 2rem;
       grid-column: span 2;
     }
   }

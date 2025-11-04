@@ -4,10 +4,9 @@
 }
 
 .header--left {
-
   .site-name {
     text-align: left;
-    padding-inline-start: .2rem;
+    padding-inline-start: 0.2rem;
   }
 }
 
@@ -16,7 +15,7 @@
   text-align: center;
   padding-block-start: 1rem;
   font-size: 1.2rem;
-  transition: transform .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: transform 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
   a {
     color: #757575;
@@ -48,7 +47,6 @@
   padding-block-end: 1rem;
 }
 
-
 /* Photo */
 .path-fotografia,
 .path-video {
@@ -62,10 +60,9 @@
   }
 
   .page-title {
-    gap: .4rem;
+    gap: 0.4rem;
     @media (min-width: 768px) {
       font-size: 3.35rem;
-
     }
   }
 
@@ -86,8 +83,14 @@
   .page-subtitle--bodas {
     letter-spacing: 27px;
   }
-}
+    .title-alt {
+      display: none;
 
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+}
 
 .path-video {
   .site-name {
