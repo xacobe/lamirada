@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.full
-    - core.entity_view_mode.media.square
     - field.field.node.exposicion.field_exposicion_photo
+    - image.style.grid_item
+    - image.style.max_1300x1300
     - node.type.exposicion
   module:
-    - colorbox
     - nomarkup
+    - photoswipe
     - user
 id: node.exposicion.default
 targetEntityType: node
@@ -17,13 +17,16 @@ bundle: exposicion
 mode: default
 content:
   field_exposicion_photo:
-    type: colorbox_view_modes
+    type: photoswipe_field_formatter
     label: hidden
     settings:
-      colorbox_view_mode: square
-      colorbox_modal_view_mode: full
-      colorbox_gallery: post
-      colorbox_gallery_custom: ''
+      photoswipe_thumbnail_style_first: ''
+      photoswipe_thumbnail_style: grid_item
+      photoswipe_image_style: max_1300x1300
+      photoswipe_reference_image_field: field_media_image
+      photoswipe_view_mode: default
+      image_loading:
+        attribute: lazy
     third_party_settings:
       nomarkup:
         enabled: true

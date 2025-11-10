@@ -48,19 +48,21 @@
       a {
         color: grey;
         font-family: "Alatsi", serif;
-/*
+
         &.is-active {
             color: var(--orange) !important;
-            font-size: var(--fs-md);
-          } */
+          }
       }
     }
     .menu-item--active-trail {
       order: 0;
 
       a {
-        color: var(--orange) !important;
         /* font-size: var(--fs-md); */
+
+        &.is-active {
+          color: var(--orange);
+        }
       }
     }
   }

@@ -3,13 +3,13 @@ langcode: es
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.full
-    - core.entity_view_mode.media.square
     - field.storage.node.field_reportage_media
+    - image.style.grid_item
+    - image.style.max_1300x1300
     - node.type.reportage
   module:
-    - colorbox
     - node
+    - photoswipe
     - user
 id: reportages
 label: Reportajes
@@ -142,12 +142,15 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: colorbox_view_modes
+          type: photoswipe_field_formatter
           settings:
-            colorbox_view_mode: square
-            colorbox_modal_view_mode: full
-            colorbox_gallery: none
-            colorbox_gallery_custom: ''
+            photoswipe_thumbnail_style_first: ''
+            photoswipe_thumbnail_style: grid_item
+            photoswipe_image_style: max_1300x1300
+            photoswipe_reference_image_field: ''
+            photoswipe_view_mode: _custom
+            image_loading:
+              attribute: lazy
           group_column: target_id
           group_columns: {  }
           group_rows: true
